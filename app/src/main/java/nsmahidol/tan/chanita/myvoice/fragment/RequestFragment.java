@@ -131,6 +131,7 @@ public class RequestFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+
                 getActivity().getSupportFragmentManager()
                         .beginTransaction().replace(R.id.myContent, DisplayFragment.displayInstance(strings[i]))
                         .addToBackStack(null)
